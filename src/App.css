@@ -1,0 +1,110 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 文字をはねてフェードイン */
+@keyframes bounceFadeIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  40% {
+    transform: translateY(-10px);
+    opacity: 0.6;
+  }
+  60% {
+    transform: translateY(-5px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* フェードインアニメーションを追加 */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* フェードアウトアニメーションを追加 */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 写真の動かし */
+@keyframes moveFade {
+  0% {
+    transform: translateX(0);
+    opacity: 0; /* 最初は完全に透明 */
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1; /* 中間点で完全に不透明 */
+  }
+  100% {
+    transform: translateX(50px); /* 最後は元の位置に戻る */
+    opacity: 0; /* 最後は再び透明になる */
+  }
+}
+
+/* html {
+  visibility: hidden;
+}
+html.wf-active {
+  visibility: visible;
+}
+p {
+  visibility: hidden;
+}
+
+.wf-active p {
+  visibility: visible;
+} */
