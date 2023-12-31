@@ -51,7 +51,7 @@ export const WelcomePage = () => {
           <BounceFadeinSentence sentence={'昨年は大変お世話になりました。'} />
           <br />
           <BounceFadeinSentence
-            sentence={'本年もよろしくお願いいたします！'}
+            sentence={'本年もよろしくお願いいたします。'}
             baseTime={15}
           />
         </p>
