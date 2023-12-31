@@ -57,6 +57,7 @@ export const WelcomePage = () => {
         </p>
         <Container>
           <Row>
+            {/*  */}
             <Col xs={{ span: 6, offset: 6 }}>
               <BounceFadeinSentence sentence={'令和六年 元旦'} baseTime={31} />
             </Col>
